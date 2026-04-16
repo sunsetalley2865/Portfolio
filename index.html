@@ -1,41 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio – John Doe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+  <!-- Phosphor Icons for social icons -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
 
-  <!-- NAVBAR -->
-  <nav>
-    <h2>Portfolio<span>.</span></h2>
-    <ul>
-      <li>About</li>
-      <li>Projects</li>
-      <li>Skills</li>
-      <li>Resume</li>
-    </ul>
-    <button class="hire-btn">Hire me!</button>
-  </nav>
+  <div class="outer-bg">
+    <div class="card">
 
-  <!-- HERO SECTION -->
-  <section class="hero">
-    <div class="left">
-      <div class="line"></div>
-      <h1>I’m John Doe, a <br> Front-end Developer</h1>
-      <p>I design web apps to turn your ideas into reality.</p>
-      <button class="cta">Get in touch</button>
+      <!-- ── NAVBAR ── -->
+      <nav class="navbar">
+        <a href="#" class="logo">Portfolio<span class="dot">.</span></a>
 
-      <div class="socials">
-        <p>Let’s connect!</p>
-      </div>
-    </div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#resume">Resume</a></li>
+        </ul>
 
-    <div class="right">
-      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="dev illustration">
-    </div>
-  </section>
+        <a href="#contact" class="btn-hire">Hire me!</a>
+      </nav>
+
+      <!-- ── HERO ── -->
+      <section class="hero" id="about">
+        <!-- Left column -->
+        <div class="hero-left">
+          <div class="accent-line"></div>
+          <h1 class="hero-heading">
+            I'm John Doe, a<br>
+            <span>Front-end Developer</span>
+          </h1>
+          <p class="hero-sub">I design web apps to turn your ideas into reality.</p>
+          <a href="#contact" class="btn-contact" id="contact">Get in touch</a>
+        </div>
+
+        <!-- Right column – tech illustration -->
+        <div class="hero-right">
+          <div class="illustration">
+            <!-- Laptop body -->
+            <div class="laptop">
+              <div class="laptop-screen">
+                <div class="screen-bar"></div>
+                <div class="screen-content">
+                  <div class="sc-red-bar"></div>
+                  <div class="sc-green-line"></div>
+                </div>
+              </div>
+              <div class="laptop-keyboard">
+                <div class="key-rows">
+                  <div class="key-row"></div>
+                  <div class="key-row"></div>
+                  <div class="key-row"></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating tech badges -->
+            <div class="badge badge-html">HTML</div>
+            <div class="badge badge-react">React</div>
+            <div class="badge badge-css">CSS</div>
+            <div class="badge badge-js">Javascript</div>
+
+            <!-- Floating gear icons -->
+            <div class="gear gear-tl">⚙</div>
+            <div class="gear gear-tr">⚙</div>
+
+            <!-- Floating chat bubbles -->
+            <div class="bubble bubble-lg">💬</div>
+            <div class="bubble bubble-sm">💬</div>
+
+            <!-- Floating cubes -->
+            <div class="cube cube-teal">⬡</div>
+            <div class="cube cube-red">⬡</div>
+            <div class="cube cube-blue">⬡</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ── FOOTER / SOCIAL ── -->
+      <footer class="footer">
+        <span class="connect-label">Let's connect!</span>
+        <span class="connect-line">—</span>
+        <div class="social-icons">
+          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+          <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
+          <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
+          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+        </div>
+      </footer>
+
+    </div><!-- /card -->
+  </div><!-- /outer-bg -->
 
 </body>
 </html>
