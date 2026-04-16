@@ -1,71 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Alex Carter | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <nav>
-      <h1>Alex Carter</h1>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero-text">
-      <p class="tag">Data Analyst | Python | SQL | Power BI</p>
-      <h2>I turn messy data into useful decisions.</h2>
-      <p>Dummy portfolio website built to learn GitHub Pages hosting.</p>
-      <a class="btn" href="#projects">View Projects</a>
-    </div>
-  </header>
 
-  <main>
-    <section id="about" class="card">
-      <h3>About Me</h3>
-      <p>
-        Hi, I'm Alex. This is a sample portfolio site with dummy content.
-        Replace this with your own bio, interests, academic background, and career goals.
-      </p>
-    </section>
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Portfolio<span>.</span></h2>
+    <ul>
+      <li>About</li>
+      <li>Projects</li>
+      <li>Skills</li>
+      <li>Resume</li>
+    </ul>
+    <button class="hire-btn">Hire me!</button>
+  </nav>
 
-    <section id="projects" class="card">
-      <h3>Projects</h3>
-      <div class="grid">
-        <article>
-          <h4>Sales Dashboard</h4>
-          <p>Built an interactive dashboard to track monthly revenue and customer churn.</p>
-          <p><strong>Tech:</strong> Power BI, Excel, SQL</p>
-        </article>
-        <article>
-          <h4>Resume Screener API</h4>
-          <p>Created a Python API that matches resumes to role requirements using keyword scoring.</p>
-          <p><strong>Tech:</strong> Python, Flask, Pandas</p>
-        </article>
-        <article>
-          <h4>Student Performance Analysis</h4>
-          <p>Analyzed academic records to find patterns affecting student outcomes.</p>
-          <p><strong>Tech:</strong> Python, Jupyter, Matplotlib</p>
-        </article>
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="left">
+      <div class="line"></div>
+      <h1>I’m John Doe, a <br> Front-end Developer</h1>
+      <p>I design web apps to turn your ideas into reality.</p>
+      <button class="cta">Get in touch</button>
+
+      <div class="socials">
+        <p>Let’s connect!</p>
       </div>
-    </section>
+    </div>
 
-    <section id="skills" class="card">
-      <h3>Skills</h3>
-      <p>Python • SQL • Java • Power BI • Tableau • Excel • Git • HTML • CSS</p>
-    </section>
+    <div class="right">
+      <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="dev illustration">
+    </div>
+  </section>
 
-    <section id="contact" class="card">
-      <h3>Contact</h3>
-      <p>Email: alexcarter@example.com</p>
-      <p>GitHub: github.com/alexcarter</p>
-      <p>LinkedIn: linkedin.com/in/alexcarter</p>
-    </section>
-  </main>
 </body>
 </html>
