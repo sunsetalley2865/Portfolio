@@ -2,102 +2,169 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio – John Doe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vigneshwar K | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet"/>
-  <!-- Phosphor Icons for social icons -->
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
-
-  <div class="outer-bg">
-    <div class="card">
-
-      <!-- ── NAVBAR ── -->
+  <div class="page-wrap">
+    <div class="hero-card">
       <nav class="navbar">
-        <a href="#" class="logo">Portfolio<span class="dot">.</span></a>
+        <div class="logo">Portfolio<span>.</span></div>
 
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#project">Project</a></li>
+          <li><a href="#projects">Projects</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#resume">Resume</a></li>
         </ul>
 
-        <a href="#contact" class="btn-hire">Hire me!</a>
+        <a class="hire-btn" href="mailto:vignesh2042@gmail.com">Hire me!</a>
       </nav>
 
-      <!-- ── HERO ── -->
-      <section class="hero" id="about">
-        <!-- Left column -->
+      <section class="hero-section">
         <div class="hero-left">
           <div class="accent-line"></div>
-          <h1 class="hero-heading">
-            I'm John Doe, a<br>
-            <span>Front-end Developer</span>
+
+          <h1>
+            I’m Vigneshwar K, a <br />
+            Data & AI Developer
           </h1>
-          <p class="hero-sub">I design web apps to turn your ideas into reality.</p>
-          <a href="#contact" class="btn-contact" id="contact">Get in touch</a>
+
+          <p class="hero-subtext">
+            I build intelligent data products, analytics dashboards, ETL workflows,
+            and scalable applications using Python, OpenAI, SQL, Flask, React, and cloud-ready tools.
+          </p>
+
+          <div class="hero-actions">
+            <a class="primary-btn" href="mailto:vignesh2042@gmail.com">Get in touch</a>
+            <a class="secondary-btn" href="#projects">View Projects</a>
+          </div>
+
+          <div class="hero-meta">
+            <p><strong>Based in:</strong> Bengaluru, India</p>
+            <p><strong>Email:</strong> vignesh2042@gmail.com</p>
+          </div>
+
+          <div class="social-row">
+            <span>Let’s connect!</span>
+            <a href="mailto:vignesh2042@gmail.com">Email</a>
+            <a href="https://www.linkedin.com/in/VigneshwarKandeeban" target="_blank">LinkedIn</a>
+            <a href="#resume">Resume</a>
+          </div>
         </div>
 
-        <!-- Right column – tech illustration -->
         <div class="hero-right">
-          <div class="illustration">
-            <!-- Laptop body -->
+          <div class="illustration-box">
+            <div class="tech-badge html">Python</div>
+            <div class="tech-badge react">React</div>
+            <div class="tech-badge css">SQL</div>
+            <div class="tech-badge js">OpenAI</div>
+
             <div class="laptop">
-              <div class="laptop-screen">
+              <div class="screen">
                 <div class="screen-bar"></div>
-                <div class="screen-content">
-                  <div class="sc-red-bar"></div>
-                  <div class="sc-green-line"></div>
-                </div>
+                <div class="screen-card"></div>
               </div>
-              <div class="laptop-keyboard">
-                <div class="key-rows">
-                  <div class="key-row"></div>
-                  <div class="key-row"></div>
-                  <div class="key-row"></div>
-                </div>
-              </div>
+              <div class="keyboard"></div>
             </div>
-
-            <!-- Floating tech badges -->
-            <div class="badge badge-html">HTML</div>
-            <div class="badge badge-react">React</div>
-            <div class="badge badge-css">CSS</div>
-            <div class="badge badge-js">Javascript</div>
-
-            <!-- Floating gear icons -->
-            <div class="gear gear-tl">⚙</div>
-            <div class="gear gear-tr">⚙</div>
-
-            <!-- Floating chat bubbles -->
-            <div class="bubble bubble-lg">💬</div>
-            <div class="bubble bubble-sm">💬</div>
-
-            <!-- Floating cubes -->
-            <div class="cube cube-teal">⬡</div>
-            <div class="cube cube-red">⬡</div>
-            <div class="cube cube-blue">⬡</div>
           </div>
         </div>
       </section>
+    </div>
 
-      <!-- ── FOOTER / SOCIAL ── -->
-      <footer class="footer">
-        <span class="connect-label">Let's connect!</span>
-        <span class="connect-line">—</span>
-        <div class="social-icons">
-          <a href="https://linkedin.com" target="_blank" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
-          <a href="https://github.com" target="_blank" aria-label="GitHub"><i class="ph ph-github-logo"></i></a>
-          <a href="https://twitter.com" target="_blank" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
-          <a href="https://instagram.com" target="_blank" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+    <section id="about" class="content-section">
+      <h2>About</h2>
+      <p>
+        I’m a Computer Science graduate with a minor in Machine Learning, focused on building
+        practical systems across data engineering, analytics, APIs, and AI-powered products.
+        My experience spans recommendation systems, ETL automation, dashboarding, full-stack development,
+        and real-time applications.
+      </p>
+    </section>
+
+    <section id="projects" class="content-section">
+      <h2>Projects</h2>
+      <div class="card-grid">
+        <div class="info-card">
+          <h3>AI Recommendation System</h3>
+          <p>
+            Built a recommendation system using OpenAI APIs and large employee datasets to map skills,
+            categorize talent, and support personalized development paths.
+          </p>
         </div>
-      </footer>
 
-    </div><!-- /card -->
-  </div><!-- /outer-bg -->
+        <div class="info-card">
+          <h3>Live Google Docs Clone</h3>
+          <p>
+            Developed a collaborative document editor using React, Node.js, and WebSocket for real-time updates.
+          </p>
+        </div>
 
+        <div class="info-card">
+          <h3>Medical Expenditure Prediction</h3>
+          <p>
+            Used Python and Scikit-learn to analyze factors affecting healthcare expenditure and build predictive models.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Face Tracking App</h3>
+          <p>
+            Implemented a real-time facial feature tracking application using Python, OpenCV, and NumPy.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>E-commerce Website</h3>
+          <p>
+            Built a Django-based commerce platform with authentication, product catalogue, and secure payments.
+          </p>
+        </div>
+
+        <div class="info-card">
+          <h3>Chat Application</h3>
+          <p>
+            Created a Socket.io-powered chat platform with live messaging and room-based communication.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="content-section">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span>Python</span>
+        <span>Java</span>
+        <span>JavaScript</span>
+        <span>Go</span>
+        <span>Flask</span>
+        <span>Django</span>
+        <span>React</span>
+        <span>Node.js</span>
+        <span>SQL</span>
+        <span>MongoDB</span>
+        <span>PostgreSQL</span>
+        <span>Power BI</span>
+        <span>Tableau</span>
+        <span>Docker</span>
+        <span>Kubernetes</span>
+        <span>OpenAI APIs</span>
+        <span>Machine Learning</span>
+        <span>NLP</span>
+        <span>ETL</span>
+        <span>REST APIs</span>
+      </div>
+    </section>
+
+    <section id="resume" class="content-section">
+      <h2>Resume</h2>
+      <p>
+        Data-focused software engineer with experience across AI systems, dashboards, ETL workflows,
+        API integrations, and full-stack development.
+      </p>
+      <a class="primary-btn" href="mailto:vignesh2042@gmail.com">Request Resume</a>
+    </section>
+  </div>
 </body>
 </html>
